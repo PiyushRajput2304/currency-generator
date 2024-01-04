@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* Body Styles */
 body {
     background-image: url(bg.jpg);
@@ -17,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 /* Container Styles */
@@ -26,7 +20,7 @@ body {
     -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     min-height: 40vh;
-    width: 40vh;
+    width: 50vh;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
@@ -121,7 +115,7 @@ button:hover {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 480px) {
     .container {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
