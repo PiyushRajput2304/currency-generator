@@ -100,7 +100,8 @@ button:hover {
 /* Adjustments for smaller screens */
 @media screen and(max-widht: 480px) {
     .container{
-        width:80%;
+        width:90%;
+        height:90%
     }
     body{
         widht:100%;
