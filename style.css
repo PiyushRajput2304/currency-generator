@@ -135,6 +135,7 @@ button:hover {
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
+         margin: 0 auto;
     }
 
     /* Other elements adjustments for medium-sized screens */
@@ -144,6 +145,7 @@ button:hover {
 @media screen and (min-width: 1200px) {
     .container {
         width: 80%;
+         margin: 0 auto;
     }
 
     /* Additional responsive styles for larger screens */
