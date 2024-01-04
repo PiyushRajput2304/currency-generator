@@ -91,3 +91,31 @@ form button {
     border-radius: 1rem;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional responsive styles */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Adjustments for smaller screens for other elements */
+    .select-container img {
+        width: 30px; /* Decrease flag size */
+    }
+
+    /* Additional responsive styles */
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    /* Additional responsive styles */
+}
