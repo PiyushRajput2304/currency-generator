@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include this to handle box-sizing */
+    box-sizing: border-box;
 }
 
 /* Body Styles */
@@ -15,8 +15,8 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif; /* Define a fallback font */
-    color: #333; /* Set default text color */
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
 /* Container Styles */
@@ -25,23 +25,25 @@ body {
     -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     min-height: 40vh;
-    width: 70%; /* Adjusted width for better responsiveness */
-    max-width: 600px; /* Added max-width for larger screens */
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 400px; /* Added max-width for larger screens */
     margin: 0 auto; /* Center the container */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
 }
 
 /* Heading Styles */
 .container h2 {
-    text-align: center; /* Center align the heading */
+    text-align: center;
 }
 
 /* Amount Styles */
 .amount h3 {
-    text-align: center; /* Center align the amount */
-    margin-top: 1rem; /* Add some spacing */
+    text-align: center;
+    margin-top: 1rem;
 }
 
 /* Form Styles */
@@ -52,14 +54,15 @@ form {
 form select,
 form button,
 form input {
-    width: 100%;
-    border: 2px solid lightgray; /* Consistent border */
+    width: calc(100% - 4px); /* Adjusted width considering border */
+    border: 2px solid lightgray;
     outline: none;
     font-size: 1rem;
     padding: 0.5rem;
-    margin-bottom: 1rem; /* Add some spacing between form elements */
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
-    box-shadow: none; /* Remove any existing box-shadow */
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
 form button {
@@ -68,7 +71,7 @@ form button {
     color: white;
     font-size: 1.15rem;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -80,7 +83,7 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem; /* Adjusted margin for spacing */
+    margin-top: 1.5rem;
 }
 
 .dropdown i {
@@ -102,7 +105,7 @@ form button:hover {
 }
 
 .select-container select {
-    width: 100%; /* Ensure select takes full width */
+    width: 100%;
 }
 
 /* Message Styles */
@@ -115,13 +118,14 @@ form button:hover {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
-        width: 80%; /* Adjusted width for smaller screens */
+        width: 80%;
     }
 }
 
 /* Adjustments for even smaller screens */
 @media screen and (max-width: 480px) {
     .container {
-        width: 90%; /* Adjusted width for very small screens */
+        width: 90%;
+        padding: 1.5rem; /* Adjusted padding for smaller screens */
     }
 }
