@@ -104,7 +104,8 @@ button:hover {
         justify-content: center;
         align-items: center;
         width: 90%;
-
+        padding-left:2px;
+         padding-right:2px;
     }
 
     /* Adjustments for smaller screens for other elements */
