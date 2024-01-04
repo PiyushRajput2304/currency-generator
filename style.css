@@ -98,13 +98,20 @@ button:hover {
 
 /* Additional responsive styles */
 /* Adjustments for smaller screens */
+@media screen and(max-widht: 480px) {
+    .container{
+        width:80%;
+    }
+    body{
+        widht:100%;
+        height:auto;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .container {   
         width: 90%;
-    }
-    body{
-       background-size: cover;
-       background-position: center;
     }
 }
 
