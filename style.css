@@ -1,6 +1,8 @@
-*{
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include this to handle box-sizing */
 }
 
 /* Body Styles */
@@ -11,7 +13,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Define a fallback font */
+    color: #333; /* Set default text color */
 }
 
 /* Container Styles */
@@ -20,7 +25,9 @@ body {
     -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     min-height: 40vh;
-    width: 50vh;
+    width: 70%; /* Adjusted width for better responsiveness */
+    max-width: 600px; /* Added max-width for larger screens */
+    margin: 0 auto; /* Center the container */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
@@ -28,15 +35,13 @@ body {
 
 /* Heading Styles */
 .container h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center; /* Center align the heading */
 }
 
 /* Amount Styles */
 .amount h3 {
-    display: flex;
-    padding: 0 2px;
+    text-align: center; /* Center align the amount */
+    margin-top: 1rem; /* Add some spacing */
 }
 
 /* Form Styles */
@@ -45,18 +50,29 @@ form {
 }
 
 form select,
-button,
-input {
+form button,
+form input {
     width: 100%;
-    border: none;
+    border: 2px solid lightgray; /* Consistent border */
     outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem; /* Add some spacing between form elements */
+    border-radius: 0.5rem;
+    box-shadow: none; /* Remove any existing box-shadow */
 }
 
-form input {
-    border: 2px solid lightgray;
-    font-size: 1rem;
+form button {
     height: 3rem;
-    padding-left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 /* Dropdown Styles */
@@ -64,12 +80,11 @@ form input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem; /* Adjusted margin for spacing */
 }
 
 .dropdown i {
     font-size: 1.5rem;
-    margin-top: 1rem;
 }
 
 /* Select Container Styles */
@@ -87,8 +102,7 @@ form input {
 }
 
 .select-container select {
-    font-size: 1rem;
-    width: auto;
+    width: 100%; /* Ensure select takes full width */
 }
 
 /* Message Styles */
@@ -96,51 +110,18 @@ form input {
     margin: 2rem 0;
 }
 
-/* Button Styles */
-form button {
-    height: 3rem;
-    background-color: rgba(255, 255, 255, 0.18);
-    color: white;
-    font-size: 1.15rem;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 /* Media Queries */
 
 /* Adjustments for smaller screens */
-@media screen and (max-width: 480px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    /* Other elements adjustments for smaller screens */
-    .select-container img {
-        width: 30px; /* Decrease flag size */
-    }
-}
-
-/* Adjustments for medium-sized screens */
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
-         margin: 0 auto;
+        width: 80%; /* Adjusted width for smaller screens */
     }
-
-    /* Other elements adjustments for medium-sized screens */
 }
 
-/* Adjustments for larger screens */
-@media screen and (min-width: 1200px) {
+/* Adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
     .container {
-        width: 80%;
-         margin: 0 auto;
+        width: 90%; /* Adjusted width for very small screens */
     }
-
-    /* Additional responsive styles for larger screens */
 }
