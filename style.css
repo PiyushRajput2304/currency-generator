@@ -100,7 +100,11 @@ button:hover {
 /* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
-        width: 100%;
+       display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
     }
 
     /* Adjustments for smaller screens for other elements */
