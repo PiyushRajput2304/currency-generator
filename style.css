@@ -99,12 +99,14 @@ button:hover {
 /* Additional responsive styles */
 /* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
-    .container {
-     
+    .container {   
         width: 90%;
-        padding-left:2px;
-         padding-right:2px;
     }
+    body{
+       background-size: cover;
+       background-position: center;
+    }
+}
 
     /* Adjustments for smaller screens for other elements */
     .select-container img {
