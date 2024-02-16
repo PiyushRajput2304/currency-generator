@@ -121,6 +121,10 @@ form button:hover {
     .container {
         width: 80%;
     }
+    .select-container select {
+    font-size: 0.8rem;
+}
+
 }
 
 /* Adjustments for even smaller screens */
@@ -129,4 +133,11 @@ form button:hover {
         width: 90%;
         padding: 1.5rem; /* Adjusted padding for smaller screens */
     }
+        .select-container select {
+    font-size: 0.8rem;
+    width: auto;
+    }
+    }
 }
+
+ 
