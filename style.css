@@ -115,29 +115,41 @@ form button:hover {
 }
 
 /* Media Queries */
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-    .select-container select {
-    font-size: 0.8rem;
-}
-
-}
-
-/* Adjustments for even smaller screens */
 @media screen and (max-width: 480px) {
     .container {
         width: 90%;
-        padding: 1.5rem; /* Adjusted padding for smaller screens */
     }
-        .select-container select {
-    font-size: 0.8rem;
-    width: auto;
+    .select-container{
+        width: 7rem;;
     }
+
+    /* Other elements adjustments for smaller screens */
+    .select-container img {
+        width: 30px; /* Decrease flag size */
     }
 }
 
- 
+/* Adjustments for medium-sized screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .select-container{
+        width: 7rem;;
+    }
+
+    /* Other elements adjustments for medium-sized screens */
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+    .select-container{
+        width: 7rem;;
+    }
+
+
+    /* Additional responsive styles for larger screens */
+}
