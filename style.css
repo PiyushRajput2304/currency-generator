@@ -26,7 +26,7 @@ body {
     padding: 2rem;
     min-height: 40vh;
     width: 90%; /* Adjusted width for better responsiveness */
-    max-width: 400px; /* Added max-width for larger screens */
+    max-width: 500px; 
     margin: 0 auto; /* Center the container */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -87,7 +87,7 @@ form button:hover {
 }
 
 .dropdown i {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /* Select Container Styles */
@@ -101,7 +101,7 @@ form button:hover {
     align-items: center;
     border-radius: 0.5rem;
     border: 1px solid lightgray;
-    width: 7rem;
+    width: 8rem;
 }
 
 .select-container select {
@@ -117,10 +117,10 @@ form button:hover {
 /* Media Queries */
 @media screen and (max-width: 480px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
     .select-container{
-        width: 7rem;;
+        width: 8 rem;;
     }
 
     /* Other elements adjustments for smaller screens */
@@ -132,10 +132,10 @@ form button:hover {
 /* Adjustments for medium-sized screens */
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
     .select-container{
-        width: 7rem;;
+        width: 8 rem;;
     }
 
     /* Other elements adjustments for medium-sized screens */
@@ -144,10 +144,10 @@ form button:hover {
 /* Adjustments for larger screens */
 @media screen and (min-width: 1200px) {
     .container {
-        width: 80%;
+        width: 95%;
     }
     .select-container{
-        width: 7rem;;
+        width: 8 rem;
     }
 
 
